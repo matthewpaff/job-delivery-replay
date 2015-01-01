@@ -1,0 +1,17 @@
+{
+  "max_attempts": 3,
+  "events": [
+    {
+      "event": "enqueue",
+      "job_id": "job-5"
+    },
+    {
+      "event": "deliver",
+      "job_id": "job-5"
+    },
+    {
+      "event": "deliver",
+      "job_id": "job-5"
+    }
+  ]
+}
