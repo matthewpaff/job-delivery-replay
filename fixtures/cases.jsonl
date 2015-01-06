@@ -1,1 +1,2 @@
 {"description": "reject deliveries for jobs that were not enqueued", "expected_error": true, "id": "jobs-0000", "input": {"events": [{"event": "deliver", "job_id": "job-0"}], "max_attempts": 3}}
+{"description": "reject zero-attempt delivery policies", "expected_error": true, "id": "jobs-0001", "input": {"events": [], "max_attempts": 0}}
