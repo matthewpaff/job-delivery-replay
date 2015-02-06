@@ -42,3 +42,4 @@
 {"description": "reject zero-attempt delivery policies", "expected_error": true, "id": "jobs-0041", "input": {"events": [], "max_attempts": 0}}
 {"description": "reject blank job identifiers", "expected_error": true, "id": "jobs-0042", "input": {"events": [{"event": "enqueue", "job_id": " "}], "max_attempts": 3}}
 {"description": "reject unsupported worker event kinds", "expected_error": true, "id": "jobs-0043", "input": {"events": [{"event": "unknown", "job_id": "job-43"}], "max_attempts": 3}}
+{"description": "reject failure events for completed jobs", "expected_error": true, "id": "jobs-0044", "input": {"events": [{"event": "enqueue", "job_id": "job-44"}, {"event": "deliver", "job_id": "job-44"}, {"event": "fail", "job_id": "job-44"}], "max_attempts": 3}}
